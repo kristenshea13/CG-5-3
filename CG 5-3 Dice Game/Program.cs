@@ -28,8 +28,10 @@ namespace CG_5_3_Dice_Game
 
         }
 
-        private static int ()
+        private static int RollDice()
             {
+                
+
 
             }
 
