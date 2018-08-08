@@ -28,12 +28,17 @@ namespace CG_5_3_Dice_Game
 
         }
 
-        private static int RollDice()
-            {
-                
+        //private static int RollDice()
+        //{
+        //   // Random diceRoll = new Random();
 
 
-            }
+
+        //}
+                       
+
+
+            
 
 
 
