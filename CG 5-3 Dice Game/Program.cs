@@ -26,45 +26,64 @@ namespace CG_5_3_Dice_Game
 
 
             Console.WriteLine("Beat the Computer! First to 20 wins!");
-            Console.WriteLine(); //blank line between game name and first user entry line for readability
+            //Console.WriteLine(); //blank line between game name and first user entry line for readability
             Console.Write("Player 1 name: ");
             string player1 = Console.ReadLine();
             string player2 = "Computer";
-            Console.Write($"{player1} vs {player2}");
+            Console.WriteLine($"{player1} vs {player2}");
+
+
+            string [] playerArray = new string[] { player1, player2};
 
 
 
-            
+            //Console.WriteLine("First roll: {0}", RollDice());
+
+
+
+
+           /*do
+            {
+                Console.Write($"{player1}, hit enter to roll.");
+                
+
+
+
+
+
+            } while (rollTotal < 20);*/
+
+
+            //while (rollTotal >= 20)
+            //{
+            //    Console.WriteLine("Winner!");
+            //    Console.ReadLine();
+            //    return;
+            //}
+
 
             Console.ReadLine();
 
 
         }
 
+        /// <summary>
+        /// randomized roll for two six-sided dice
+        /// </summary>
+        /// <returns>randomized roll for two six-sided dice added together</returns>
         private static int RollDice()
         {
-
-
-            //roll 2 to 12 at random for two six-sided dice, return number
             Random rnd = new Random();
-            int dicePair = rnd.Next(2, 12);
-            return dicePair;
+            return rnd.Next(2, 12);
             
-
-       
+            //originally had the code on return line as two lines of code (shown below in comment), 
+            //didn't necessarily need to name the variable, so i consolidated into one.
+            //int dicePair = rnd.Next(2, 13);
+            //return dicePair;
+            ////https://stackoverflow.com/questions/3975290/produce-a-random-number-in-a-range-using-c-sharp
         }
 
-        //declare random only once or it will give an error
-        /*Random rnd = new Random();
-int month = rnd.Next(1, 13); // creates a number between 1 and 12
-int dice = rnd.Next(1, 7); // creates a number between 1 and 6
-int card = rnd.Next(52); // creates a number between 0 and 51*/
-
-        /*public double GetRandomNumberInRange(double minNumber, double maxNumber)
-        {
-        return new Random().NextDouble() * (minNumber - maxNumber) + minNumber;
-        }*/
-        //https://stackoverflow.com/questions/3975290/produce-a-random-number-in-a-range-using-c-sharp
+        
 
 
 
