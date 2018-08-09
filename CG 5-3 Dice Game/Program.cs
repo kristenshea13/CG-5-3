@@ -37,21 +37,21 @@ namespace CG_5_3_Dice_Game
 
 
 
-            //Console.WriteLine("First roll: {0}", RollDice());
+            Console.WriteLine("{0}'s First roll: {1}", player1, RollDice());
 
 
 
 
-           /*do
-            {
-                Console.Write($"{player1}, hit enter to roll.");
-                
+            /*do
+             {
+                 Console.Write("{0}, hit enter to roll.", player1);
 
 
 
 
 
-            } while (rollTotal < 20);*/
+
+             } while (rollTotal < 20);*/
 
 
             //while (rollTotal >= 20)
