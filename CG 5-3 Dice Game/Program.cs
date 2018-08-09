@@ -33,7 +33,7 @@ namespace CG_5_3_Dice_Game
             Console.WriteLine($"{player1} vs {player2}");
 
 
-            string [] playerArray = new string[] { player1, player2};
+            //string [] playerArray = new string[] { player1, player2};
 
 
 
@@ -44,7 +44,7 @@ namespace CG_5_3_Dice_Game
 
             /*do
              {
-                 Console.Write("{0}, hit enter to roll.", player1);
+                 Console.Write("{0} hit enter to roll.", player1);
 
 
 
