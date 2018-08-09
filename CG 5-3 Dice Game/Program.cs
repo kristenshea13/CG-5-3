@@ -42,26 +42,27 @@ namespace CG_5_3_Dice_Game
         }
 
         private static int RollDice()
-        //{
+        {
+            
 
-//roll 2 to 12 at random for two six-sided dice, return number
-//   Random diceRoll = new Random();
-
-
-
-//}
-
-
-    /*public double GetRandomNumberInRange(double minNumber, double maxNumber)
-    {
-    return new Random().NextDouble() * (minNumber - maxNumber) + minNumber;
-    }*/
+        //roll 2 to 12 at random for two six-sided dice, return number
+        //   Random diceRoll = new Random();
 
 
 
+        }
+
+
+        /*public double GetRandomNumberInRange(double minNumber, double maxNumber)
+        {
+        return new Random().NextDouble() * (minNumber - maxNumber) + minNumber;
+        }*/
+        //https://stackoverflow.com/questions/3975290/produce-a-random-number-in-a-range-using-c-sharp
 
 
 
 
-}
+
+
+    }
 }
