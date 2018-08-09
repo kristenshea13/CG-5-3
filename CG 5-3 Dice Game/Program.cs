@@ -34,7 +34,7 @@ namespace CG_5_3_Dice_Game
 
 
 
-
+            
 
             Console.ReadLine();
 
@@ -43,15 +43,22 @@ namespace CG_5_3_Dice_Game
 
         private static int RollDice()
         {
+
+
+            //roll 2 to 12 at random for two six-sided dice, return number
+            Random rnd = new Random();
+            int dicePair = rnd.Next(2, 12);
+            return dicePair;
             
 
-        //roll 2 to 12 at random for two six-sided dice, return number
-        //   Random diceRoll = new Random();
-
-
-
+       
         }
 
+        //declare random only once or it will give an error
+        /*Random rnd = new Random();
+int month = rnd.Next(1, 13); // creates a number between 1 and 12
+int dice = rnd.Next(1, 7); // creates a number between 1 and 6
+int card = rnd.Next(52); // creates a number between 0 and 51*/
 
         /*public double GetRandomNumberInRange(double minNumber, double maxNumber)
         {
