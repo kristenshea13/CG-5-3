@@ -32,6 +32,8 @@ namespace CG_5_3_Dice_Game
             string player2 = "Computer";
             Console.WriteLine($"{player1} vs {player2}");
 
+            
+            
 
             //string [] playerArray = new string[] { player1, player2};
 
@@ -42,16 +44,25 @@ namespace CG_5_3_Dice_Game
 
 
 
-            /*do
+            do
              {
                  Console.Write("{0} hit enter to roll.", player1);
+                int firstrollP1 = RollDice();
+                Console.Write(firstrollP1);
+
+                Console.Write("Hit enter for {0} to roll.", player2);
+                int firstrollP2 = RollDice();
+                Console.Write(firstrollP2);
+
+
+
+                 
 
 
 
 
 
-
-             } while (rollTotal1 < 20 && rollTotal2 < 20);*/
+             } while (rollTotal1 < 20 && rollTotal2 < 20);
 
 
             while (rollTotal1 >= 20 || rollTotal2 >= 20)
