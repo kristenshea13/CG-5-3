@@ -13,6 +13,7 @@ namespace CG_5_3_Dice_Game
             Console.Write("Player 1 name: ");
             string player1 = Console.ReadLine();
             string player2 = "Computer";
+            Console.WriteLine(); //blank line
             Console.WriteLine("{0}  vs  {1}", player1, player2);
             Console.WriteLine();
 
@@ -55,9 +56,6 @@ namespace CG_5_3_Dice_Game
                 Console.Write("Current total for {0} is {1} \n", player2, rollTotal2);
                 Console.WriteLine(); //added for extra space
 
-                
-               
-
 
             } while (rollTotal1 < 20 && rollTotal2 < 20);
             //while statement so loop will repeat until player 1 or the computer's total is 20 or more
@@ -79,6 +77,7 @@ namespace CG_5_3_Dice_Game
         /// randomized roll for two six-sided dice
         /// </summary>
         /// <returns>randomized roll for two six-sided dice added together</returns>
+        /// https://stackoverflow.com/questions/3975290/produce-a-random-number-in-a-range-using-c-sharp
         private static int RollDice()
         {
             Random rnd = new Random();
@@ -86,10 +85,9 @@ namespace CG_5_3_Dice_Game
 
             //wanted a roll of 2 dice added together so did min 2 and max 13 since min is inclusive and max is exclusive
             //originally had the code on return line as two lines of code (shown below in comment), 
-            //didn't need to name the variable, so i consolidated into one.
+            //didn't actually need to name the variable, so i consolidated into one.
             //int dicePair = rnd.Next(2, 13);
             //return dicePair;
-            ////https://stackoverflow.com/questions/3975290/produce-a-random-number-in-a-range-using-c-sharp
         }
 
 
