@@ -64,7 +64,8 @@ namespace CG_5_3_Dice_Game
             //while statement so loop will repeat until player 1 or the computer's total is 20 or more
 
 
-            //create code that determines winner, winner is player1 unless player 2's total is greater than player 1's, then winner is player 1
+            //create code that determines winner, winner is player1 unless player 2's total is greater 
+            //than player 1's, then winner is player 2
             string winner = player1;
             if (rollTotal2 > rollTotal1)
                 winner = player2;
