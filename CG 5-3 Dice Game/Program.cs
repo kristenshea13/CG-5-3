@@ -82,9 +82,9 @@ namespace CG_5_3_Dice_Game
             Random rnd = new Random();
             return rnd.Next(2, 13);
 
-            //wanted a roll of 2 dice added together so did min 2 and max 13 since max is exclusive
+            //wanted a roll of 2 dice added together so did min 2 and max 13 since min is inclusive and max is exclusive
             //originally had the code on return line as two lines of code (shown below in comment), 
-            //didn't necessarily need to name the variable, so i consolidated into one.
+            //didn't need to name the variable, so i consolidated into one.
             //int dicePair = rnd.Next(2, 13);
             //return dicePair;
             ////https://stackoverflow.com/questions/3975290/produce-a-random-number-in-a-range-using-c-sharp
