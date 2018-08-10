@@ -33,6 +33,13 @@ namespace CG_5_3_Dice_Game
                 int firstrollP1 = RollDice();
                 Console.WriteLine(firstrollP1);
 
+                //set roll total variable for user, total plus random method-generated number for each turn
+                rollTotal1 = rollTotal1 + firstrollP1;
+
+                //print user total to console
+                Console.Write("Current total for {0} is {1} \n", player1, rollTotal1);
+                // \n added a line break so declaration of totals would print on separate lines instead of the same line
+
                 //ask user to hit enter to make computer's roll, console.readline so it pauses until user hits enter
                 //set first roll variable to equal random return from method and then print to console
 
@@ -41,20 +48,15 @@ namespace CG_5_3_Dice_Game
                 int firstrollP2 = RollDice();
                 Console.WriteLine(firstrollP2);
 
-                //set roll total variables for user and computer (player 1 and 2)
-                //take total and add the  random method-generated number from each roll to the total
-              
-                rollTotal1 = rollTotal1 + firstrollP1;
+                //set roll total variable for computer, total plus random number roll from each turn
                 rollTotal2 = rollTotal2 + firstrollP2;
 
-                //print total tally for user and computer to the console so user knows who is in the lead
-
-                Console.Write("Current total for {0} is {1} \n", player1, rollTotal1);
-                // \n added a line break so declaration of totals would print on separate lines instead of the same line
-
-                Console.Write("Current total for {0} is {1} \n", player2, rollTotal2); 
+                //print computer total to console
+                Console.Write("Current total for {0} is {1} \n", player2, rollTotal2);
                 Console.WriteLine(); //added for extra space
 
+                
+               
 
 
             } while (rollTotal1 < 20 && rollTotal2 < 20);
