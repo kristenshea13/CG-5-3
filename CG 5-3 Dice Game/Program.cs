@@ -18,8 +18,7 @@ namespace CG_5_3_Dice_Game
             Console.WriteLine();
 
 
-            
-
+            //declare variables for totals as integers
             int rollTotal1 = 0;
             int rollTotal2 = 0;
 
