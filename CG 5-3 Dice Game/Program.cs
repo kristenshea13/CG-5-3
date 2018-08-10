@@ -37,7 +37,7 @@ namespace CG_5_3_Dice_Game
                 rollTotal1 = rollTotal1 + firstrollP1;
 
                 //print user total to console
-                Console.Write("Current total for {0} is {1} \n", player1, rollTotal1);
+                Console.Write("{0}'s current total: {1} \n", player1, rollTotal1);
                 // \n added a line break so declaration of totals would print on separate lines instead of the same line
 
                 //if created to break out of loop if player 1 total is 20 or greater so computer won't get another roll
@@ -56,7 +56,7 @@ namespace CG_5_3_Dice_Game
                 rollTotal2 = rollTotal2 + firstrollP2;
 
                 //print computer total to console
-                Console.Write("Current total for {0} is {1} \n", player2, rollTotal2);
+                Console.Write("{0}'s current total: {1} \n", player2, rollTotal2);
                 Console.WriteLine(); //added for extra space
 
 
@@ -70,7 +70,7 @@ namespace CG_5_3_Dice_Game
                 winner = player2;
 
             //print winner to console
-            Console.WriteLine("Winner is {0}!", winner);
+            Console.WriteLine("{0} Wins!", winner);
             Console.ReadLine();
             
 
