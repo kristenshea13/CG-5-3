@@ -40,6 +40,10 @@ namespace CG_5_3_Dice_Game
                 Console.Write("Current total for {0} is {1} \n", player1, rollTotal1);
                 // \n added a line break so declaration of totals would print on separate lines instead of the same line
 
+                //if created to break out of loop if player 1 total is 20 or greater so computer won't get another roll
+                if (rollTotal1 >= 20)
+                    break;
+
                 //ask user to hit enter to make computer's roll, console.readline so it pauses until user hits enter
                 //set first roll variable to equal random return from method and then print to console
 
