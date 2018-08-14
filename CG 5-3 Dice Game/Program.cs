@@ -37,8 +37,9 @@ namespace CG_5_3_Dice_Game
                 rollTotal1 = rollTotal1 + firstrollP1;
 
                 //print user total to console
-                Console.Write("{0}'s current total: {1} \n", player1, rollTotal1);
+                Console.WriteLine("{0}'s current total: {1}", player1, rollTotal1);
                 // \n added a line break so declaration of totals would print on separate lines instead of the same line
+                //using console.writeline solved this issue as well
 
                 //if created to break out of loop if player 1 total is 20 or greater so computer won't get another roll
                 if (rollTotal1 >= 20)
@@ -56,7 +57,7 @@ namespace CG_5_3_Dice_Game
                 rollTotal2 = rollTotal2 + firstrollP2;
 
                 //print computer total to console
-                Console.Write("{0}'s current total: {1} \n", player2, rollTotal2);
+                Console.WriteLine("{0}'s current total: {1}", player2, rollTotal2);
                 Console.WriteLine(); //added for extra space
 
 
